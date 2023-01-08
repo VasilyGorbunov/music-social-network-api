@@ -38,7 +38,7 @@ class UserController extends Controller
    * @param int $id
    * @return \Illuminate\Http\JsonResponse
    */
-  public function update(UpdateUserRequest $request, $id)
+  public function update(UpdateUserRequest $request, int $id)
   {
     try {
       $user = User::findOrFail($id);
